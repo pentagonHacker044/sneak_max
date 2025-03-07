@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.noUi-connect {
+  background: #444b58;
+}
+
+.noUi-horizontal {
+  height: 2px;
+}
+.noUi-target {
+  border: none;
+  box-shadow: none;
+  background: #444b58;
+}
+
+
+:root {
+  --index: calc(1vw + 1vh)
+}
+
+/* div {
+  font-size: calc(var(--index) * 2) ;
+} */

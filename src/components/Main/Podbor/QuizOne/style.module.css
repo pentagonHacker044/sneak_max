@@ -1,0 +1,60 @@
+.typeImg {
+  width: 100%;
+}
+
+.typeContainer {
+  display: grid;
+  grid-template-columns: repeat(3, calc(var(--index) * 9));
+  gap: 20px;
+}
+.typeContainer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.typeContainer label {
+  cursor: pointer;
+}
+
+.typeContainer input {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 1px solid #dbbba9;
+  border-radius: 5px;
+}
+.typeContainer input:checked {
+  background: #dbbba9;
+}
+.kindSneak {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #444b58;
+  border-top: 1px solid #444b58;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .typeContainer {
+    grid-template-columns: repeat(2, calc(var(--index) * 9));
+    align-items: center;
+    justify-content: center;
+  }
+  .kindSneak {
+    text-align: center;
+  }
+}
+@media (max-width: 572px) {
+  .typeContainer {
+    grid-template-columns: repeat(2, calc(var(--index) * 12));
+  }
+  .typeContainer div {
+    font-size: 14px;
+  }
+}

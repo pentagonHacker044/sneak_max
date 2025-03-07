@@ -1,0 +1,27 @@
+.containerThree {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid #444b58;
+  border-top: 1px solid #444b58;
+  padding: 25px 0;
+}
+.containerThree h2 {
+  font-family: "Intro-Book";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444b58;
+}
+.containerThree textarea {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  outline: none;
+  resize: none;
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  color: #dbbba9;
+}

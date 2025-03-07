@@ -1,0 +1,57 @@
+.container {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: calc(var(--index) * 17);
+  height: calc(var(--index) * 14.5);
+}
+
+.productList {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bottomContainer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px 4px 10px 0px #484283;
+}
+.total {
+  font-family: "Intro-Book";
+  font-size: calc(var(--index) * .5);
+  line-height: 20px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+.totalPrice {
+  font-family: "Intro-Bold";
+  font-size: calc(var(--index) * .8);
+  line-height: 20px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.totalContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.goToBucket button {
+  padding: 15px 40px;
+  background: #f14f4f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Intro-Regular";
+  font-size: calc(var(--index) * .55);
+  line-height: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+  cursor: pointer;
+}

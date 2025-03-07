@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.navContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.navItem {
+  font-family: "Intro-Book";
+  color: #ffffff;
+  text-decoration: none;
+  font-size: calc(var(--index) * 0.47);
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.bucket {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+.bucketContainer {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  /* display: none; */
+}
+.bucketCount {
+  position: relative;
+}
+.countProducts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Intro-Book";
+  font-size: calc(var(--index) * 0.47);
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  background: #f14f4f;
+  border-radius: 100%;
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+}
+
+.close {
+  display: none;
+}
+
+.burgerButton {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+.burger {
+  background: transparent;
+  width: 100%;
+}
+.navClose {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.imgDarkBucket {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    gap: 30px;
+  }
+  .navContainer {
+    gap: 20px;
+  }
+  .navItem {
+    font-size: calc(var(--index) * .7);
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    background: white;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 7px;
+    /* border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px; */
+  }
+  .navItem {
+    color: #444B58;
+  }
+  .navClose {
+    display: none;
+  }
+  .burgerButton {
+    display: block;
+    width: 32px;
+  }
+  .imgDarkBucket {
+    display: block;
+  }
+  .imgBucket {
+    display: none;
+  }
+}
+@media (max-width: 572px) {
+  .nav {
+    padding: 10px 0;
+    border-radius: 7px;
+    /* border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px; */
+  }
+  .burgerButton {
+    width: 32px;
+  }
+  .navContainer {
+    display: grid;
+    grid-template-columns: repeat(3, calc(var(--index) * 6));
+    border-right: 1px solid #484283;
+  }
+  .navItem {
+    font-size: calc(var(--index) * .75);
+    width: 100%;
+  }
+  .bucket {
+    flex-direction: column;
+  }
+}
+

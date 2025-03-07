@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.container {
+  padding-top: 10px;
+  background: #484283;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+
+.bgText {
+  display: flex;
+  height: 100%;
+}
+
+.h1 {
+  font-family: "Intro-Bold";
+  color: white;
+  opacity: 12%;
+  font-size: calc(var(--index) * 6.5);
+  position: absolute;
+  bottom: 13%;
+  left: 25%;
+}
+
+.title {
+  position: absolute;
+  bottom: calc(var(--index) * 3);
+  right: calc(var(--index) * 30);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    bottom:  calc(var(--index) * 7);
+    right: calc(var(--index) * 20);
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    right: calc(var(--index) * 13);
+  }
+}
+@media (max-width: 572px) {
+  .title {
+    right: calc(var(--index) * 8);
+  }
+}

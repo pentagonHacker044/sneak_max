@@ -1,0 +1,364 @@
+@import "nouislider/distribute/nouislider.css";
+
+
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.catalog {
+  font-family: "Intro-Bold";
+  /* margin: 50px 320px; */
+  margin-top: calc(var(--index) * 1.5);
+  font-size: calc(var(--index) * 1.2);
+  font-weight: 700;
+  line-height: 30px;
+  color: #444b58;
+}
+
+.span {
+  font-family: "Intro-Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+
+.sneakContainer {
+  display: grid;
+  grid-template-columns: repeat(3, calc(var(--index) * 10));
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #fff4ee;
+  height: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.globalContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Intro-Book";
+  /* gap: 10px; */
+}
+.sliderValue {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-around;
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 5px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.priceContainer span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.min {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.max {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+
+
+.genderContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Intro-Book";
+  gap: 10px;
+}
+.genderContainer span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.genderCheck {
+  display: flex;
+  font-family: "Intro-Book";
+  justify-content: space-between;
+}
+
+.genderCheck label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.genderCheck input {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #dbbba9;
+  border-radius: 5px;
+}
+.genderCheck input:checked {
+  background: #dbbba9;
+}
+
+.sizeContainer {
+  display: grid;
+  grid-template-columns: repeat(3, calc(var(--index) * 3));
+  font-family: "Intro-Book";
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sizeContainer label {
+  border: 1px solid #dbbba9;
+  cursor: pointer;
+  height: 60px;
+  position: relative;
+}
+.sizeContainer span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+}
+.sizeContainer input {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  content: "35";
+}
+
+.sizeContainer input:checked {
+  background: #dbbba9;
+}
+.sizeContainer input:hover {
+  background: #dbbba9;
+}
+
+.confirm {
+  font-family: "Intro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 20px 20px;
+  background: #444b58;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.reset {
+  font-family: "Intro-Regular";
+  background: transparent;
+  border: none;
+  color: #444b58;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.confirm:hover {
+  transform: scale(1.05);
+}
+.reset:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444b58;
+}
+
+.eachPrice {
+  font-family: "Intro-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444b58;
+}
+
+.sneakCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+.sneakCard:hover {
+  transform: scale(0.95);
+}
+
+.paginationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.paginationBtn {
+  max-width: 200px;
+  padding: 25px 40px;
+  background: #f14f4f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Intro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+.paginationBtn:hover {
+  background: #f36f6f;
+}
+
+.imgBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.imgBtns:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.imgBtns button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background: #444b58;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.imgBtns button:hover {
+  background: #31343c;
+}
+
+.imgBtns img {
+  width: 30px;
+  height: 30px;
+}
+
+.product_image {
+  position: relative;
+  width: 100%;
+}
+.sneakImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .sizeContainer {
+    grid-template-columns: repeat(3, calc(var(--index) * 5));
+  }
+  .globalContainer {
+    flex-direction: column;
+  }
+
+  .genderCheck {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgBtns {
+    gap: 20px;
+  }
+
+  .imgBtns img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .imgBtns button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 572px) {
+  /* .container {
+    max-width: calc(var(--index) * 20)
+  }
+  .globalContainer {
+    justify-content: center;
+    align-items: center;
+  } */
+  .sneakContainer {
+    display: grid;
+    grid-template-columns: repeat(2, calc(var(--index) * 10));
+    gap: 20px;
+  }
+}

@@ -1,0 +1,71 @@
+.podborIsReadyText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dbbba9;
+}
+.podborIsReadyText p {
+  font-family: "Intro-Book";
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #dbbba9;
+}
+.podborIsReadyText h2 {
+  font-family: "Intro-Bold";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #444b58;
+}
+.quizForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quizForm button {
+  max-width: 200px;
+  padding: 20px;
+  background: #f14f4f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Intro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.quizForm input {
+  outline: none;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  max-width: 470px;
+}
+.quizFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #dbbba9;
+  padding: 50px;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.quizFormContainer span {
+  font-family: "Intro-Book";
+  font-size: 18px;
+  line-height: 25.2px;
+  font-weight: 300;
+  color: white;
+}
+.quizFormContainer h3 {
+  font-family: "Intro-Bold";
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+}

@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.globalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFirst {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  gap: 20px;
+  background: #fff4ee;
+  border-radius: 5px;
+  max-width: calc(var(--index) * 35);
+}
+
+.title {
+  color: #444b58;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title h2 {
+  font-family: "Intro-Bold";
+  font-size: calc(var(--index));
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.title p {
+  font-family: "Intro-Book";
+  font-size: calc(var(--index) * .52);
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.quizSneak {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quizSneak p {
+  font-family: "Intro-Book";
+  font-size: calc(var(--index) * .8);
+  font-weight: 400;
+  line-height: 24px;
+  color: #444b58;
+}
+
+.nextStep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nextStepBtn {
+  background: transparent;
+  border: 1px solid #444b58;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-family: "Intro-Regular";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444b58;
+}
+
+.nextStepBtn:hover {
+  background: #444b58;
+  color: white;
+}
+
+.backArrowBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.backArrowBtn img {
+  width: 24px;
+}
+.backArrowBtn:hover {
+  opacity: 50%;
+}
+
+.btnsQuiz {
+  display: flex;
+  gap: 20px;
+}
+
+.numberStep {
+  font-family: "Intro-Book";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #808080;
+}
+
+.kindSize {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerFour {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .containerFirst {
+    max-width: calc(var(--index) * 23);
+  }
+  .title p {
+    font-size: calc(var(--index));
+    line-height: 23px;
+  }
+}
+@media (max-width: 572px) {
+  .containerFirst {
+    max-width: calc(var(--index) * 23);
+    padding: 20px 50px;
+  }
+  .title p {
+    font-size: calc(var(--index));
+    line-height: 23px;
+  }
+  .title h2 {
+    font-size: calc(var(--index) * 1.4);
+    text-align: center;
+  }
+}

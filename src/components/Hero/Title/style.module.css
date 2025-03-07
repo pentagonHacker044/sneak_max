@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--index) * .8);
+  color: white;
+  max-width: calc(var(--index) * 20);
+}
+
+.h3 {
+  font-family: "Intro-Regular";
+  font-weight: 400;
+  font-size: calc(var(--index) * 1.2);
+  line-height: 50px;
+}
+
+.p {
+  max-width: 480px;
+  font-family: "Intro-Book";
+  font-size: calc(var(--index) * .6);
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(233, 233, 233);
+}
+
+.btn {
+    font-family: "Intro-Regular";
+    font-size: calc(var(--index) * .55);
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+    background: #F14F4F;
+    border: none;
+    border-radius: 4px;
+    max-width: calc(var(--index) * 8);
+    padding: 25px 0;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s ease-in-out;
+}
+.btn:hover {
+  background: #f36262;
+}
+
+@media (max-width: 768px) {
+  .h3 {
+    font-size: calc(var(--index) * 1.3);
+    line-height: 30px;
+  }
+
+  .p {
+    font-size: calc(var(--index) * .8);
+    line-height: 20px;
+  }
+  .btn {
+    font-size: calc(var(--index) * .8);
+    padding: 15px 10px;
+  }
+}

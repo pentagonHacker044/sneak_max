@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.globalContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+.formContainer {
+  background: #484283;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer h2 {
+  font-family: "Intro-Bold";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: white;
+}
+
+.textContainer p {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  max-width: 220px;
+}
+
+.inputContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputContainer form input {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444b58;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 340px;
+  outline: none;
+}
+.inputContainer form button {
+  font-family: "Intro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #f14f4f;
+  color: white;
+}
+
+.instContainer {
+    text-align: center;
+}
+
+.photoGroup {
+  max-width: calc(var(--index) * 25);
+}
+
+@media (max-width: 1024px) {
+  .instContainer {
+    display: none;
+  }
+}
+@media (max-width: 572px) {
+  .container {
+    transform: scale(0.9);
+  }
+}

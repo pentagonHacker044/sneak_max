@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.img {
+  width: 600px;
+}
+.img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.globalContainer {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: 0px 0px 50px 1px rgb(175, 175, 175);
+}
+
+.topContainer {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+.specific {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote {
+  font-family: "Intro-Book";
+  display: flex;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  opacity: 50%;
+}
+.title {
+  font-family: "Intro-Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #444b58;
+}
+
+.stars {
+  color: #f14f4f;
+  font-size: 25px;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  /* gap: calc(var(--index) * .7); */
+}
+.sizesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.disable {
+  padding: 10px 30px;
+  border: 1px solid #b2b5bb;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+.disable:hover {
+  background: #f14f4f;
+  color: white;
+  border: 1px solid #f14f4f;
+}
+.enable {
+  padding: 10px 30px;
+  border: 2px solid #f14f4f;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.price {
+  font-family: "Intro-Bold";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444b58;
+}
+
+.oldPrice {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #b2b5bb;
+  text-decoration: line-through;
+}
+
+.buyBtn {
+  font-family: "Intro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+  padding: 20px;
+  background: #f14f4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dopInfo {
+  display: flex;
+  color: gray;
+  font-family: "Intro-Book";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  gap: 10px;
+}
+
+.dopInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botContainer {
+  display: flex;
+  gap: 170px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.description p {
+  max-width: 430px;
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.description h2 {
+  font-family: "Intro-Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.character h2 {
+  font-family: "Intro-Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.characterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Intro-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width: 1024px) {
+  .enable {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .disable {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-width: 800px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 27px;
+  }
+  .oldPrice {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+  }
+  .topContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .specific {
+    gap: 20px;
+    width: 100%;
+  }
+
+
+  .sizes {
+    grid-template-columns: repeat(5, 100px);
+  }
+}
+
+@media (max-width: 600px) {
+  .sizes {
+    grid-template-columns: repeat(4, 80px);
+  }
+  .botContainer {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

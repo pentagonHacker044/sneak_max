@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+
+.container {
+  background: #484283;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.figure {
+  position: absolute;
+  left: 0;
+}
+
+.textContainer {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.h2 {
+  font-family: "Intro-Bold";
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.p {
+  font-family: "Intro-Book";
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 380px;
+}
+
+.logo {
+  font-family: "Intro-Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: absolute;
+  right: 0px;
+  bottom: 150px;
+}
+
+.logo:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+.img {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: calc(var(--index) * 20);
+  }
+  .img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .p {
+    font-size: 13px;
+  }
+  .h2 {
+    font-size: 25px;
+  }
+  .logo {
+    bottom: 50px;
+  }
+  .figure {
+    width: calc(var(--index) * 20);
+  }
+}
+@media (max-width: 572px) {
+  .p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .h2 {
+    font-size: 22px;
+  }
+  .logo {
+    bottom: 45px;
+  }
+  .figure {
+    width: calc(var(--index) * 20);
+  }
+}

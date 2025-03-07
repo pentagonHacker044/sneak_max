@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.logo {
+  font-family: "Intro-Bold";
+  color: white;
+  font-size: calc(var(--index));
+  font-weight: 700;
+  line-height: 30px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: calc(var(--index) * 1.7);
+  }
+}

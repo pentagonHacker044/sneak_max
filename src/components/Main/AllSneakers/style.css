@@ -1,0 +1,33 @@
+.noUi-target {
+  border: none;
+}
+
+.noUi-horizontal {
+  height: 4px;
+  background: #818999;
+}
+
+.noUi-connect {
+  background: #444b58;
+}
+
+.noUi-handle {
+  border: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 6px;
+  height: 20px;
+  background: #444b58;
+  right: -3px;
+  top: -7.5px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.noUi-handle::after {
+  display: none;
+}
+.noUi-handle::before {
+  display: none;
+}

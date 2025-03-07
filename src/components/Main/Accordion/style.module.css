@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: calc(var(--index) * 30);
+}
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--index) * 30);
+}
+.accordion h3 {
+  font-family: "Intro-Regular";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444b58;
+}
+
+.accordionCard {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  padding: 25px 0;
+  border-top: 1px solid #444b58;
+  border-bottom: 1px solid #444b58;
+  cursor: pointer;
+}
+
+.open p {
+  font-family: "Intro-Book";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444b58;
+}
+
+.plus {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.plusClose {
+  transform: rotate(45deg);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.container h2 {
+  font-family: "Intro-Bold";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444b58;
+}
+
+@media (max-width: 768px) {
+  .container h2 {
+    font-size: 25px;
+  }
+  .open p {
+    font-size: 14px;
+  }
+  .accordion h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 572px) {
+  .accordion {
+    max-width: calc(var(--index) * 25);
+  }
+  .container {
+    max-width: calc(var(--index) * 25);
+  }
+}

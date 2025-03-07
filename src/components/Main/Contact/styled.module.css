@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Intro-Book";
+  src: url(../../../../fonts/Intro-Book.ttf);
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url(../../../fonts/intro_regular.ttf);
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url(../../fonts/intro_bold.ttf);
+}
+
+.globalContainer {
+  display: flex;
+  justify-content: center;
+  background: #f3f6f6;
+  padding: 50px 0;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactsContainer h2 {
+  font-family: "Intro-Bold";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #444b58;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.mainOfice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ofice {
+  font-family: "Intro-Book";
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #b2b5bb;
+}
+
+.number {
+  font-family: "Intro-Regular";
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #444b58;
+}
+
+.address {
+  font-family: "Intro-Book";
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #444b58;
+}
+
+.socialContainer {
+  display: flex;
+  gap: 20px;
+}
+
+iframe {
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 17);
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .socialContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    width: calc(var(--index) * 25);
+    height: calc(var(--index) * 17);
+  }
+}

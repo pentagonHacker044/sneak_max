@@ -1,0 +1,55 @@
+.globalContainer {
+  background: #444b58;
+  padding: 30px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo h2 {
+  font-family: "Intro-Bold";
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--index) * 1.5);
+}
+
+.navContainer a {
+  text-decoration: none;
+  font-family: "Intro-Book";
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.navContainer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    gap: calc(var(--index));
+  }
+  .logo h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 572px) {
+  .navContainer {
+    display: grid;
+    grid-template-columns: repeat(2, calc(var(--index) * 8));
+  }
+  .container {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
