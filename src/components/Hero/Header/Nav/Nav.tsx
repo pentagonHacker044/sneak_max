@@ -4,7 +4,6 @@ import Bucket from "./Bucket/Bucket";
 import { useAppSelector } from "../../../../store/hooks";
 import { useState } from "react";
 import cn from "classnames";
-import React from "react";
 import burger from "../../../../imgs/icons/burger.svg"
 import darkBucket from "../../../../imgs/icons/darkBucket.svg"
 
@@ -13,8 +12,6 @@ const Nav = () => {
 
   const [bucketActive, setBucketActive] = useState<"open" | "close">("close");
   const [isOpen, setIsOpen] = useState(false)
-
-  const bucketRef = React.useRef();
 
   const openBucket = () => {
     if (bucketActive === "close") {
@@ -51,7 +48,7 @@ const Nav = () => {
             Контакты
           </a>
         </div>
-        <div ref={bucketRef} className={styled.bucket} onClick={openBucket}>
+        <div className={styled.bucket} onClick={openBucket}>
           <a className={styled.navItem} href="#">
             Корзина
           </a>
