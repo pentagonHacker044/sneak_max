@@ -1,7 +1,7 @@
 import MainPage from "../pages/MainPage/MainPage";
 import SneakPage from "../pages/SneakPage/SneakPage";
 
-export const MAIN_PAGE_ROUTE = "/";
+export const MAIN_PAGE_ROUTE = "/sneak_max";
 export const SNEAK_PAGE_ROUTE = "/sneak";
 
 export const routes = [
