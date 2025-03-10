@@ -104,3 +104,8 @@
     transform: scale(0.9);
   }
 }
+@media (max-width: 430px) {
+  .container {
+    transform: scale(0.8);
+  }
+}

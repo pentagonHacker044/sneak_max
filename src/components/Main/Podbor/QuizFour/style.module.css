@@ -69,3 +69,29 @@
   font-weight: 700;
   color: white;
 }
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 572px) {
+  .quizFormContainer {
+    width: 100%;
+    padding: 20px;
+  }
+  .quizFormContainer span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .quizFormContainer h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .globalContainer {
+    align-items: center;
+  }
+  .podborIsReadyText p {
+    font-size: 16px;
+  }
+}

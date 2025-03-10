@@ -25,3 +25,11 @@
   padding: 10px;
   color: #dbbba9;
 }
+
+@media (max-width: 572px) {
+  .containerThree textarea {
+    width: 200px;
+    height: 150px;
+    font-size: 14px;
+  }
+}

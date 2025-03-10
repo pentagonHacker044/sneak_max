@@ -146,4 +146,8 @@
     font-size: calc(var(--index) * 1.4);
     text-align: center;
   }
+  .numberStep {
+    font-size: 12px;
+  }
+
 }

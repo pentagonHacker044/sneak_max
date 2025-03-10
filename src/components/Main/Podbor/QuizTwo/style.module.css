@@ -53,3 +53,12 @@
     max-width: calc(var(--index) * 23);
   }
 }
+@media (max-width: 572px) {
+  .checkboxContainer label {
+    font-size: 12px;
+  }
+  .checkboxContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

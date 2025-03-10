@@ -262,3 +262,8 @@
     justify-content: center;
   }
 }
+@media (max-width: 450px) {
+  .sizes {
+    grid-template-columns: repeat(3, 80px);
+  }
+}

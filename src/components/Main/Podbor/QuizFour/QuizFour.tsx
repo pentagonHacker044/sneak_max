@@ -2,7 +2,7 @@ import styled from "./style.module.css";
 
 const QuizFour = () => {
   return (
-    <div>
+    <div className={styled.globalContainer}>
       <div className={styled.podborIsReadyText}>
         <h2>Ваша подборка готова!</h2>
         <p>

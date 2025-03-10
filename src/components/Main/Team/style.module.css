@@ -88,3 +88,8 @@
     grid-template-columns: repeat(2, calc(var(--index) * 10));
   }
 }
+@media (max-width: 450px) {
+  .teamContainer {
+    grid-template-columns: repeat(1, calc(var(--index) * 20));
+  }
+}
